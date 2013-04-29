@@ -5,10 +5,6 @@ Pets::Application.routes.draw do
   resources :appointments, only: [:new, :create, :show]
   resources :pets, only: [:new, :create]
 
-  devise_for :person
-
-  # get "doctors/index"
-
   resources :doctors
   root :to => "doctors#index"
 
