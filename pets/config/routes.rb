@@ -1,10 +1,18 @@
 Pets::Application.routes.draw do
 
-  devise_for :users
-
   resources :appointments, only: [:new, :create, :show]
   resources :pets, only: [:new, :create]
 
-  root :to => "doctors#index"
+  root :to => "home#index"
+
+  get 'doctors/index'
+
+  get 'appointments/new'
+
+  get 'pets/new'
+
+  get 'home/index'
+
+  # get 'appointments/:customer_id'
 
 end
