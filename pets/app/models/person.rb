@@ -1,4 +1,7 @@
 class Person < ActiveRecord::Base
+
+  devise :database_authenticatable, :timeoutable
+  
   OWNER  = :owner
   DOCTOR = :doctor
   RECEPTIONIST = :receptionist
