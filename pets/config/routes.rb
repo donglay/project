@@ -5,7 +5,6 @@ Pets::Application.routes.draw do
   resources :appointments, only: [:new, :create, :show]
   resources :pets, only: [:new, :create]
 
-  resources :doctors
   root :to => "doctors#index"
 
 end

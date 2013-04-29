@@ -1,4 +1,7 @@
 class PetsController < ApplicationController
+
+  before_filter :authenticate_user!
+  
   def new
     @pet_types = Pet.pet_types
     @customers = Person.customers
