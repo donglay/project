@@ -1,0 +1,18 @@
+Using mysql as the database.
+
+Follow the below steps.
+
+1. rake db:create  # to create database
+2. rake db:migrate # to create the tables
+3. rake db:seed # to populate seed data
+
+Recommended to start the server at port 3000.
+
+Once the server is started, and if you go to localhost:3000, you will be taken to a signin page, 
+
+please signup to proceed further.
+
+1. To view the list of doctors, go to localhost:3000/doctors/index
+2. To make an appointment go to localhost:3000/appointments/new
+3. to create a pet go to localhost:3000/pets/new
+4. to see the appointments for your pet, go to localhost:3000/appointments/:customer_id
